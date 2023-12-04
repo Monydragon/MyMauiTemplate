@@ -7,7 +7,7 @@ public static class AppConstants
     public const int EncryptionSaltSize = 16;
     public const int EncryptionKeySize = 32;
     public const int EncryptionIterations = 10000;
-    public const string SendGridApiKey = "SendGridApiKey;
+    public const string SendGridApiKey = "SendGridApiKey";
     public const string DefaultFromEmail = "email@test.com";
     public const string DefaultFromEmailUser = "Test";
     public const string SendGridVerificationEmailTemplateID = "SendGridVerificationEmailTemplateID";
