@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyMauiTemplate.Pages.SettingsPage">
+    <!-- Content -->
+    <Grid Padding="30"
+          VerticalOptions="Center">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/> <!-- Settings Label -->
+            <RowDefinition Height="Auto"/> <!-- Appearance Label -->
+            <RowDefinition Height="Auto"/> <!-- Theme Picker -->
+        </Grid.RowDefinitions>
+
+        <!-- Settings Label -->
+        <Label x:Name="settingsLabel"
+               Text="Settings" 
+               FontSize="Large" 
+               HorizontalOptions="Center"
+               Grid.Row="0"/>
+
+        <!-- Appearance Label -->
+        <Label x:Name="appearanceLabel"
+               Text="Appearance"
+               FontSize="Large"
+               HorizontalOptions="Center" 
+               Grid.Row="1"/>
+        
+        <!-- Theme Picker -->
+        <Picker x:Name="themePicker" 
+                Title="Select Theme"
+                TextColor="White"
+                BackgroundColor="Black"
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="CenterAndExpand"
+                FontSize="Medium"
+                Grid.Row="2">
+            <Picker.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>System</x:String>
+                    <x:String>Light</x:String>
+                    <x:String>Dark</x:String>
+                </x:Array>
+            </Picker.ItemsSource>
+        </Picker>
+    </Grid>
+
+</ContentPage>

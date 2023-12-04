@@ -1,0 +1,293 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyMauiTemplate.Pages.Account.RegisterPage">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem x:Name="settingsToolbarItem"
+                     Text="Settings" 
+                     Clicked="OnSettingsClicked" 
+                     IconImageSource="gear.png">
+        </ToolbarItem>
+    </ContentPage.ToolbarItems>
+    
+    <ScrollView>
+       <Grid Padding="30"
+             VerticalOptions="Center"
+             HorizontalOptions="Fill">
+           <Grid.RowDefinitions>
+               <RowDefinition Height="Auto"/> <!-- Title for the Register Screen -->
+               <RowDefinition Height="Auto"/> <!-- Email Label -->
+               <RowDefinition Height="Auto"/> <!-- Email Entry -->
+               <RowDefinition Height="Auto"/> <!-- Username Label -->
+               <RowDefinition Height="Auto"/> <!-- Username Entry -->
+               <RowDefinition Height="Auto"/> <!-- First Name Label -->
+               <RowDefinition Height="Auto"/> <!-- First Name Entry -->
+               <RowDefinition Height="Auto"/> <!-- Last Name Label -->
+               <RowDefinition Height="Auto"/> <!-- Last Name Entry -->
+               <RowDefinition Height="Auto"/> <!-- Password Label -->
+               <RowDefinition Height="Auto"/> <!-- Password Entry and Button -->
+               <RowDefinition Height="Auto"/> <!-- Confirm Password Label -->
+               <RowDefinition Height="Auto"/> <!-- Confirm Password Entry and Button -->
+               <RowDefinition Height="Auto"/> <!-- Remember Me Switch -->
+               <RowDefinition Height="Auto"/> <!-- Trust This Device Switch -->
+               <RowDefinition Height="Auto"/> <!-- Auto Login Switch -->
+               <RowDefinition Height="Auto"/> <!-- Toggle 2FA Switch -->
+               <RowDefinition Height="Auto"/> <!-- Use 2FA On Trusted Device Switch -->
+               <RowDefinition Height="Auto"/> <!-- QR Code Label -->
+               <RowDefinition Height="Auto"/> <!-- QR Code Image -->
+               <RowDefinition Height="Auto"/> <!-- Setup Key Label -->
+               <RowDefinition Height="Auto"/> <!-- Setup Key Display Label -->
+               <RowDefinition Height="Auto"/> <!-- Backup Codes Label -->
+               <RowDefinition Height="Auto"/> <!-- Backup Codes Display Label -->
+               <RowDefinition Height="Auto"/> <!-- Register Button -->
+           </Grid.RowDefinitions>
+
+           <!-- Title for the Register Screen -->
+           <Label Text="Register"
+                  FontSize="Large"
+                  HorizontalOptions="Center"
+                  Grid.Row="0"/>
+
+           <!-- Email Field -->
+           <Label Grid.Row="1">
+               <Label.FormattedText>
+                   <FormattedString>
+                       <Span Text="Email "
+                             FontSize="Medium"/>
+                       <Span Text="*"
+                             FontSize="Medium"
+                             TextColor="Red"/>
+                   </FormattedString>
+               </Label.FormattedText>
+           </Label>
+           <Entry x:Name="emailEntry"
+                  Placeholder="Enter your email"
+                  Keyboard="Email"
+                  Grid.Row="2"/>
+           
+           <!-- Username Field -->
+           <Label Grid.Row="3">
+               <Label.FormattedText>
+                   <FormattedString>
+                       <Span Text="Username "
+                             FontSize="Medium"/>
+                       <Span Text="*"
+                             FontSize="Medium"
+                             TextColor="Red"/>
+                   </FormattedString>
+               </Label.FormattedText>
+           </Label>
+           <Entry x:Name="usernameEntry"
+                  Placeholder="Choose a username"
+                  Keyboard="Default"
+                  Grid.Row="4"/>
+           
+           <!-- First Name Field -->
+           <Label Text="First Name" 
+                  FontSize="Medium"
+                  Grid.Row="5"/>
+           <Entry x:Name="firstNameEntry"
+                  Placeholder="Enter your first name"
+                  Keyboard="Default"
+                  Grid.Row="6"/>
+
+           <!-- Last Name Field -->
+           <Label Text="Last Name" 
+                  FontSize="Medium"
+                  Grid.Row="7"/>
+           <Entry x:Name="lastNameEntry"
+                  Placeholder="Enter your last name"
+                  Keyboard="Default"
+                  Grid.Row="8"/>
+
+           <!-- Password Field -->
+           <Label Grid.Row="9">
+               <Label.FormattedText>
+                   <FormattedString>
+                       <Span Text="Password "
+                             FontSize="Medium"/>
+                       <Span Text="*"
+                             FontSize="Medium"
+                             TextColor="Red"/>
+                   </FormattedString>
+               </Label.FormattedText>
+           </Label>
+           <Grid Grid.Row="10">
+               <Grid.ColumnDefinitions>
+                   <ColumnDefinition Width="*" />
+                   <ColumnDefinition Width="Auto" />
+               </Grid.ColumnDefinitions>
+               <Entry x:Name="passwordEntry"
+                      Placeholder="Enter your password"
+                      IsPassword="True"
+                      Keyboard="Default"
+                      Grid.Column="0"/>
+               <Button x:Name="passwordRevealButton"
+                       Text="Show"
+                       Clicked="OnPasswordRevealClicked"
+                       Grid.Column="1"/>
+           </Grid>
+
+           <!-- Confirm Password Field -->
+           <Label x:Name="confirmPasswordLabel"
+                  Grid.Row="11">
+               <Label.FormattedText>
+                   <FormattedString>
+                       <Span Text="Confirm Password "
+                             FontSize="Medium"/>
+                       <Span Text="*" 
+                             FontSize="Medium"
+                             TextColor="Red"/>
+                   </FormattedString>
+               </Label.FormattedText>
+           </Label>
+           <Grid Grid.Row="12">
+               <Grid.ColumnDefinitions>
+                   <ColumnDefinition Width="*" />
+                   <ColumnDefinition Width="Auto" />
+               </Grid.ColumnDefinitions>
+               <Entry x:Name="confirmPasswordEntry"
+                      Placeholder="Confirm your password"
+                      IsPassword="True"
+                      Keyboard="Default"
+                      Grid.Column="0"/>
+               <Button x:Name="confirmPasswordRevealButton"
+                       Text="Show"
+                       Clicked="OnConfirmPasswordRevealClicked"
+                       Grid.Column="1"/>
+           </Grid>
+           
+           <!-- Remember Me -->
+           <HorizontalStackLayout Spacing="10"
+                                  Grid.Row="13">
+               <Label x:Name="rememberMeLabel" 
+                      Text="Remember Me" 
+                      FontSize="Medium" 
+                      VerticalOptions="Center"/>
+               <Switch x:Name="rememberMeSwitch" 
+                       HorizontalOptions="Start"
+                       Toggled="RememberMeSwitch_OnToggled"
+                       OnColor="{AppThemeBinding Light=Green, Dark=Green}"
+                       ThumbColor="{AppThemeBinding Light=Blue, Dark=Blue}"/>
+           </HorizontalStackLayout>
+
+           <!-- Trust This Device -->
+           <HorizontalStackLayout Spacing="10" 
+                                  Grid.Row="14">
+               <Label x:Name="trustedDeviceLabel"
+                      Text="Trust This Device"
+                      FontSize="Medium"
+                      VerticalOptions="Center"
+                      IsVisible="False"/>
+               <Switch x:Name="trustedDeviceSwitch" 
+                       HorizontalOptions="Start"
+                       IsVisible="False"
+                       OnColor="{AppThemeBinding Light=Green, Dark=Green}"
+                       ThumbColor="{AppThemeBinding Light=Blue, Dark=Blue}"/>
+           </HorizontalStackLayout>
+
+           <!-- Auto Login -->
+           <HorizontalStackLayout Spacing="10"
+                                  Grid.Row="15">
+               <Label x:Name="autoLoginLabel"
+                      Text="Auto Login"
+                      FontSize="Medium"
+                      VerticalOptions="Center"
+                      IsVisible="False"/>
+               <Switch x:Name="autoLoginSwitch" 
+                       HorizontalOptions="Start"
+                       IsVisible="False"
+                       OnColor="{AppThemeBinding Light=Green, Dark=Green}"
+                       ThumbColor="{AppThemeBinding Light=Blue, Dark=Blue}"/>
+           </HorizontalStackLayout>
+           
+           <!-- Toggle 2FA Switch -->
+           <HorizontalStackLayout Spacing="10"
+                                  Grid.Row="16">
+               <Label x:Name="toggle2FaLabel"
+                      Text="Toggle 2FA"
+                      FontSize="Medium"
+                      VerticalOptions="Center"/>
+               <Switch x:Name="toggle2Fa"
+                       Toggled="OnToggle2FAToggled"
+                       HorizontalOptions="Start"
+                       OnColor="{AppThemeBinding Light=Green, Dark=Green}"
+                       ThumbColor="{AppThemeBinding Light=Blue, Dark=Blue}"/>
+           </HorizontalStackLayout>
+           
+           <!-- Use 2FA On Trusted Device Switch -->
+           <HorizontalStackLayout Spacing="10"
+                                  Grid.Row="17">
+               <Label x:Name="use2FaOnTrustedDeviceLabel" 
+                      Text="Use 2FA On Trusted Device" 
+                      FontSize="Medium" 
+                      VerticalOptions="Center"
+                      IsVisible="False"/>
+               <Switch x:Name="use2FaOnTrustedDeviceSwitch" 
+                       Toggled="OnUse2FAOnTrustedDeviceToggled"
+                       HorizontalOptions="Start"
+                       OnColor="{AppThemeBinding Light=Green, Dark=Green}"
+                       ThumbColor="{AppThemeBinding Light=Blue, Dark=Blue}"
+                       IsVisible="False"/>
+           </HorizontalStackLayout>
+           
+           <!-- QR Code Label -->
+            <Label x:Name="qrCodeLabel"
+                   Text="Scan QR code with Authenticator App"
+                   FontSize="Medium"
+                   Grid.Row="18"
+                   IsVisible="False"
+                   HorizontalOptions="Center"/>
+
+            <!-- QR Code Image -->
+            <Image x:Name="qrCodeImage"
+                   Grid.Row="19"
+                   IsVisible="False"
+                   HeightRequest="256"
+                   WidthRequest="256"
+                   HorizontalOptions="Center"/>
+
+            <!-- Setup Key Editor -->
+            <Label x:Name="setupKeyLabel"
+                   Text="Setup Key"
+                   FontSize="Medium"
+                   Grid.Row="20"
+                   IsVisible="False"
+                   HorizontalOptions="Center"/>
+            <Label x:Name="setupKeyDisplayLabel"
+                   Grid.Row="21"
+                   IsVisible="False"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Start">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="SetupKeyDisplayLabelTapGestureRecognizer_OnTapped"/>
+                </Label.GestureRecognizers>
+            </Label>
+
+            <!-- Backup Codes Label -->
+            <Label x:Name="backupCodesLabel"
+                   Text="Emergency Backup Codes"
+                   FontSize="Medium"
+                   Grid.Row="22"
+                   IsVisible="False" 
+                   HorizontalOptions="Center"/>
+
+            <!-- Backup Codes Display Label -->
+            <Label x:Name="backupCodesDisplayLabel"
+                   Grid.Row="23"
+                   IsVisible="False"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Start">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="BackupCodesDisplayLabelTapGestureRecognizer_OnTapped"/>
+                </Label.GestureRecognizers>
+            </Label>
+           
+           <!-- Register Button -->
+           <Button x:Name="registerButton"
+                   Text="Register"
+                   Clicked="OnRegisterClicked"
+                   Grid.Row="24"/>
+       </Grid>
+    </ScrollView>
+</ContentPage>

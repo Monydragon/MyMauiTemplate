@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<mopups:PopupPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+                  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                  xmlns:mopups="clr-namespace:Mopups.Pages;assembly=Mopups"
+                  x:Class="MyMauiTemplate.Popups.Account.OtpConfirmPopup"
+                  BackgroundColor="#77000000">
+       
+       <ScrollView VerticalOptions="Center"
+                   HorizontalOptions="Center">
+              <Frame WidthRequest="250"
+                     HeightRequest="175"
+                     Padding="20"
+                     BackgroundColor="Grey"
+                     CornerRadius="10">
+                     <Grid ColumnSpacing="15">
+                            <Grid.RowDefinitions>
+                                   <RowDefinition Height="Auto"/> <!-- OTP Label -->
+                                   <RowDefinition Height="Auto"/> <!-- OTP Entry -->
+                                   <RowDefinition Height="Auto"/> <!-- Buttons Grid -->
+                            </Grid.RowDefinitions>
+
+                            <!-- OTP Label -->
+                            <Label x:Name="otpLabel"
+                                   Text="Enter 2FA (OTP)" 
+                                   HorizontalOptions="Center"
+                                   FontAttributes="Bold"
+                                   Grid.Row="0"/>
+
+                            <!-- OTP Entry -->
+                            <Entry x:Name="otpEntry" 
+                                   Placeholder="OTP" 
+                                   Keyboard="Numeric" 
+                                   TextColor="Black"
+                                   PlaceholderColor="Black"
+                                   MaxLength="6"
+                                   HorizontalOptions="Fill"
+                                   Grid.Row="1"/>
+
+                            <!-- Grid for Cancel and Confirm buttons -->
+                            <Grid Grid.Row="2">
+                                   <Grid.ColumnDefinitions>
+                                          <ColumnDefinition Width="*" />
+                                          <ColumnDefinition Width="*" />
+                                   </Grid.ColumnDefinitions>
+
+                                   <Button Text="Cancel"
+                                           Clicked="OnCancelClicked"
+                                           HorizontalOptions="Fill"
+                                           Grid.Column="0"/>
+
+                                   <Button Text="Confirm" 
+                                           Clicked="OnConfirmClicked"
+                                           HorizontalOptions="Fill"
+                                           Grid.Column="1"/>
+                            </Grid>
+                     </Grid>
+              </Frame>
+       </ScrollView>
+</mopups:PopupPage>

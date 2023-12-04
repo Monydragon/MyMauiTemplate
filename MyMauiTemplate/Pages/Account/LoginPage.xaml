@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyMauiTemplate.Pages.Account.LoginPage">
+    
+    <Shell.BackButtonBehavior>
+        <BackButtonBehavior IsEnabled="False"
+                            IsVisible="False" />
+    </Shell.BackButtonBehavior>
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem x:Name="settingsToolbarItem"
+                     Text="Settings"
+                     Clicked="OnSettingsClicked" 
+                     IconImageSource="gear.png">
+        </ToolbarItem>
+    </ContentPage.ToolbarItems>
+
+
+    <ScrollView>
+        <!-- Main content in Grid Layout -->
+        <Grid Padding="30,60,30,30"
+              HorizontalOptions="Fill"
+              VerticalOptions="Start">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" /> <!-- Row for App Title Label -->
+                <RowDefinition Height="Auto" /> <!-- Row for Login Screen Title Label -->
+                <RowDefinition Height="Auto" /> <!-- Row for Username Label -->
+                <RowDefinition Height="Auto" /> <!-- Row for Username Entry -->
+                <RowDefinition Height="Auto" /> <!-- Row for Password Label -->
+                <RowDefinition Height="Auto" /> <!-- Row for Password Entry and Reveal Button -->
+                <RowDefinition Height="Auto" /> <!-- Row for Remember Me Switch -->
+                <RowDefinition Height="Auto" /> <!-- Row for Auto Login Switch -->
+                <RowDefinition Height="Auto" /> <!-- Row for Continue as Guest Button -->
+                <RowDefinition Height="Auto" /> <!-- Row for Login and Register Buttons -->
+                <RowDefinition Height="Auto" /> <!-- Row for Forgot Password Button -->
+            </Grid.RowDefinitions>
+            
+            <!-- Larger Title for the App -->
+            <Label x:Name="appTitleLabel"
+                   Grid.Row="0"
+                   Text="My MAUI Template"
+                   FontSize="Large"
+                   HorizontalOptions="Center"/>
+
+            <!-- Title for the Login Screen -->
+            <Label x:Name="loginScreenTitleLabel"
+                   Grid.Row="1"
+                   Text="Login"
+                   FontSize="Large"
+                   HorizontalOptions="Center"/>
+
+            <!-- Username Entry -->
+            <Label x:Name="usernameLabel"
+                   Grid.Row="2"
+                   Text="Username/Email"
+                   FontSize="Medium"/>
+            <Entry x:Name="usernameEntry"
+                   Grid.Row="3"
+                   Placeholder="Username Or Email"
+                   Keyboard="Default"/>
+
+            <!-- Password Entry with Reveal Toggle -->
+            <Label x:Name="passwordLabel"
+                   Grid.Row="4"
+                   Text="Password"
+                   FontSize="Medium"/>
+            <Grid Grid.Row="5">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+                <Entry x:Name="passwordEntry"
+                       Placeholder="Password"
+                       IsPassword="True"
+                       Keyboard="Default"/>
+                <Button x:Name="passwordRevealButton"
+                        Text="Show"
+                        Clicked="OnPasswordRevealClicked"
+                        Grid.Column="1"/>
+            </Grid>
+
+            <!-- Remember Me Switch -->
+            <Grid Grid.Row="6"
+                  ColumnSpacing="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+    
+                <Label x:Name="rememberMeLabel"
+                       Grid.Column="0"
+                       Text="Remember Me"
+                       FontSize="Medium"
+                       VerticalOptions="Center"/>
+
+                <Switch x:Name="rememberMeSwitch" 
+                        Grid.Column="1"
+                        Toggled="RememberMeSwitch_OnToggled"
+                        HorizontalOptions="Start"
+                        OnColor="{AppThemeBinding Light=Green, Dark=Green}"
+                        ThumbColor="{AppThemeBinding Light=Blue, Dark=Blue}"/>
+            </Grid>
+
+            <!-- Auto Login Switch -->
+            <Grid Grid.Row="7"
+                  ColumnSpacing="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+    
+                <Label x:Name="autoLoginLabel"
+                       Grid.Column="0"
+                       Text="Auto Login"
+                       FontSize="Medium"
+                       VerticalOptions="Center"
+                       IsVisible="False"/>
+
+                <Switch x:Name="autoLoginSwitch"
+                        Grid.Column="1"
+                        Toggled="AutoLoginSwitch_OnToggled"
+                        HorizontalOptions="Start"
+                        OnColor="{AppThemeBinding Light=Green, Dark=Green}"
+                        ThumbColor="{AppThemeBinding Light=Blue, Dark=Blue}"
+                        IsVisible="False"/>
+            </Grid>
+
+            <!-- Continue as Guest Button -->
+            <Button x:Name="guestLoginButton"
+                    Grid.Row="8"
+                    Text="Continue as Guest"
+                    Clicked="OnGuestLoginClicked"
+                    Margin="0,0,0,5"/>
+
+
+            <!-- Login and Register Buttons in Grid Layout -->
+            <Grid Grid.Row="9"
+                  Margin="0,5"
+                  ColumnSpacing="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Button x:Name="registerButton"
+                        Text="Register"
+                        Clicked="OnRegisterClicked"
+                        Grid.Column="0"/>
+                
+                <Button x:Name="loginButton"
+                        Text="Login"
+                        Clicked="OnLoginClicked"
+                        Grid.Column="1"/>
+            </Grid>
+
+            <!-- Forgot Password Button -->
+            <Button x:Name="forgotPasswordButton" 
+                    Grid.Row="10" 
+                    Text="Forgot Password?"
+                    Clicked="OnForgotPasswordClicked"
+                    Margin="0,5,0,0"/>
+        </Grid>
+    </ScrollView>
+</ContentPage>
