@@ -2,46 +2,66 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MyMauiTemplate.Pages.SettingsPage">
-    <!-- Content -->
-    <Grid Padding="30"
-          VerticalOptions="Center">
+
+    <Grid Padding="20"
+          VerticalOptions="Center"
+          HorizontalOptions="Fill">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/> <!-- Settings Label -->
+            <RowDefinition Height="20"/>  <!-- Spacer -->
             <RowDefinition Height="Auto"/> <!-- Appearance Label -->
+            <RowDefinition Height="20"/>  <!-- Spacer -->
             <RowDefinition Height="Auto"/> <!-- Theme Picker -->
         </Grid.RowDefinitions>
 
         <!-- Settings Label -->
         <Label x:Name="settingsLabel"
                Text="Settings" 
-               FontSize="Large" 
+               FontSize="30" 
+               FontAttributes="Bold"
                HorizontalOptions="Center"
+               VerticalOptions="End"
                Grid.Row="0"/>
+
+        <!-- Spacer Row -->
 
         <!-- Appearance Label -->
         <Label x:Name="appearanceLabel"
                Text="Appearance"
-               FontSize="Large"
-               HorizontalOptions="Center" 
-               Grid.Row="1"/>
-        
-        <!-- Theme Picker -->
-        <Picker x:Name="themePicker" 
-                Title="Select Theme"
-                TextColor="White"
-                BackgroundColor="Black"
-                HorizontalOptions="CenterAndExpand"
-                VerticalOptions="CenterAndExpand"
-                FontSize="Medium"
-                Grid.Row="2">
-            <Picker.ItemsSource>
-                <x:Array Type="{x:Type x:String}">
-                    <x:String>System</x:String>
-                    <x:String>Light</x:String>
-                    <x:String>Dark</x:String>
-                </x:Array>
-            </Picker.ItemsSource>
-        </Picker>
+               FontSize="24"
+               FontAttributes="Bold"
+               HorizontalOptions="Center"
+               VerticalOptions="Start" 
+               Grid.Row="2"/>
+
+        <!-- Spacer Row -->
+
+        <!-- Frame as a border for Picker -->
+        <Frame Grid.Row="4"
+               BorderColor="{AppThemeBinding Light=Black, Dark=White}"
+               CornerRadius="5"
+               Margin="0,10,0,0"
+               HorizontalOptions="FillAndExpand"
+               VerticalOptions="Start"
+               Padding="0"
+               BackgroundColor="{AppThemeBinding Light=Gray, Dark=Gray}">
+            <!-- Theme Picker -->
+            <Picker x:Name="themePicker"
+                    Title="Select Theme"
+                    TitleColor="{AppThemeBinding Light=Black, Dark=White}"
+                    TextColor="{AppThemeBinding Light=Black, Dark=White}"
+                    HorizontalOptions="FillAndExpand"
+                    VerticalOptions="Start"
+                    FontSize="Medium">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>System</x:String>
+                        <x:String>Light</x:String>
+                        <x:String>Dark</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+        </Frame>
     </Grid>
 
 </ContentPage>
