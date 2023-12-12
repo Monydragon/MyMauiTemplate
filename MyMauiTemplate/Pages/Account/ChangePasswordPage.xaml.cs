@@ -1,8 +1,8 @@
 using Mopups.Interfaces;
-using MyMauiTemplate.Core.Extensions;
-using MyMauiTemplate.Core.Models;
-using MyMauiTemplate.Core.RegexExpressions;
-using MyMauiTemplate.Core.Services.Interfaces;
+using MyMauiTemplate.Extensions;
+using MyMauiTemplate.Models;
+using MyMauiTemplate.Regex;
+using MyMauiTemplate.Services.Interfaces;
 
 namespace MyMauiTemplate.Pages.Account;
 

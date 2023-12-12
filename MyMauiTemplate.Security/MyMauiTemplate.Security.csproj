@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\MyMauiTemplate.Extensions\MyMauiTemplate.Extensions.csproj" />
+      <ProjectReference Include="..\MyMauiTemplate.Utilities\MyMauiTemplate.Utilities.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Otp.NET" Version="1.3.0" />
+      <PackageReference Include="SkiaSharp.QrCode" Version="0.6.0" />
+    </ItemGroup>
+
+</Project>

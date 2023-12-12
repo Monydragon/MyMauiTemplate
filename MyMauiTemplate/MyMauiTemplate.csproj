@@ -66,7 +66,11 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <ProjectReference Include="..\MyMauiTemplate.Core\MyMauiTemplate.Core.csproj" />
+	  <ProjectReference Include="..\MyMauiTemplate.API\MyMauiTemplate.API.csproj" />
+	  <ProjectReference Include="..\MyMauiTemplate.Data\MyMauiTemplate.Data.csproj" />
+	  <ProjectReference Include="..\MyMauiTemplate.Regex\MyMauiTemplate.Regex.csproj" />
+	  <ProjectReference Include="..\MyMauiTemplate.Security\MyMauiTemplate.Security.csproj" />
+	  <ProjectReference Include="..\MyMauiTemplate.Services\MyMauiTemplate.Services.csproj" />
 	</ItemGroup>
 
 </Project>

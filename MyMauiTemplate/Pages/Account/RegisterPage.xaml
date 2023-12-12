@@ -52,8 +52,9 @@
            <Label Grid.Row="1">
                <Label.FormattedText>
                    <FormattedString>
-                       <Span Text="Email "
-                             FontSize="Medium"/>
+                       <Span Text="Email"
+                             FontSize="Medium"
+                             FontFamily="Mana"/>
                        <Span Text="*"
                              FontSize="Medium"
                              TextColor="Red"/>
@@ -69,8 +70,10 @@
            <Label Grid.Row="3">
                <Label.FormattedText>
                    <FormattedString>
-                       <Span Text="Username "
-                             FontSize="Medium"/>
+                       <Span Text="Username"
+                             FontSize="Medium"
+                             FontFamily="Mana"
+                             />
                        <Span Text="*"
                              FontSize="Medium"
                              TextColor="Red"/>
@@ -104,7 +107,8 @@
            <Label Grid.Row="9">
                <Label.FormattedText>
                    <FormattedString>
-                       <Span Text="Password "
+                       <Span Text="Password"
+                             FontFamily="Mana"
                              FontSize="Medium"/>
                        <Span Text="*"
                              FontSize="Medium"
@@ -133,7 +137,8 @@
                   Grid.Row="11">
                <Label.FormattedText>
                    <FormattedString>
-                       <Span Text="Confirm Password "
+                       <Span Text="Confirm Password"
+                             FontFamily="Mana"
                              FontSize="Medium"/>
                        <Span Text="*" 
                              FontSize="Medium"

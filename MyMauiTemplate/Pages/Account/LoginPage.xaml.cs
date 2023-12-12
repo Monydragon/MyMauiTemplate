@@ -1,9 +1,8 @@
 ﻿using CommunityToolkit.Maui.Alerts;
 using Mopups.Interfaces;
-using MyMauiTemplate.Core.Models;
-using MyMauiTemplate.Core.Services.Interfaces;
-using MyMauiTemplate.Core.Utilities;
+using MyMauiTemplate.Models;
 using MyMauiTemplate.Popups.Account;
+using MyMauiTemplate.Services.Interfaces;
 using MyMauiTemplate.Utilities;
 
 namespace MyMauiTemplate.Pages.Account;
@@ -126,12 +125,11 @@ public partial class LoginPage
                     {
                         authenticatedUser = await _userService.GetUserByUsername(username);
                     }
-            
-                    if (authenticatedUser != null)
-                    {
-                        // Auto-login
-                        await LoginSuccess(authenticatedUser);
-                    }
+                }
+                if (authenticatedUser != null)
+                {
+                    // Auto-login
+                    await LoginSuccess(authenticatedUser);
                 }
                 break;
         }
