@@ -15,4 +15,6 @@ public static class AppConstants
     public const string DefaultEmailTag = "DefaultEmailTag";
     public const string DatabaseName = "test.db";
     public const string SqlLiteConnectionString = $"Data Source={DatabaseName}";
+    public const int WindowMinimumWidth = 400;
+    public const int WindowMinimumHeight = 650;
 }

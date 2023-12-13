@@ -1,4 +1,5 @@
-﻿using MyMauiTemplate.Utilities;
+﻿using MyMauiTemplate.Configuration.Constants;
+using MyMauiTemplate.Utilities;
 
 namespace MyMauiTemplate
 {
@@ -15,11 +16,8 @@ namespace MyMauiTemplate
         {
             var window = base.CreateWindow(activationState);
             
-            const int minimumWidth = 400;
-            const int minimumHeight = 650;
-            
-            window.MinimumWidth = minimumWidth;
-            window.MinimumHeight = minimumHeight;
+            window.MinimumWidth = AppConstants.WindowMinimumWidth;
+            window.MinimumHeight = AppConstants.WindowMinimumHeight;
 
             return window;
 
