@@ -1,10 +1,10 @@
 using Mopups.Interfaces;
-using MyMauiTemplate.Core.API.Postmark;
-using MyMauiTemplate.Core.Extensions;
-using MyMauiTemplate.Core.Models;
-using MyMauiTemplate.Core.Security;
-using MyMauiTemplate.Core.Services.Interfaces;
+using MyMauiTemplate.API.Postmark;
+using MyMauiTemplate.Extensions;
+using MyMauiTemplate.Models;
 using MyMauiTemplate.Popups.Account;
+using MyMauiTemplate.Security;
+using MyMauiTemplate.Services.Interfaces;
 
 namespace MyMauiTemplate.Pages.Account;
 

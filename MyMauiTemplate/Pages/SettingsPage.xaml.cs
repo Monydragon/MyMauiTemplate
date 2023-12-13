@@ -1,5 +1,5 @@
 using Mopups.Interfaces;
-using MyMauiTemplate.Core.Services.Interfaces;
+using MyMauiTemplate.Services.Interfaces;
 using MyMauiTemplate.Utilities;
 
 namespace MyMauiTemplate.Pages;

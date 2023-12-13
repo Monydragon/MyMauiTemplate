@@ -1,10 +1,10 @@
 using CommunityToolkit.Maui.Alerts;
 using CommunityToolkit.Maui.Core;
 using Mopups.Interfaces;
-using MyMauiTemplate.Core.Models;
-using MyMauiTemplate.Core.Security;
-using MyMauiTemplate.Core.Services.Interfaces;
+using MyMauiTemplate.Models;
 using MyMauiTemplate.Pages.Account;
+using MyMauiTemplate.Security;
+using MyMauiTemplate.Services.Interfaces;
 using MyMauiTemplate.Utilities;
 
 namespace MyMauiTemplate.Popups.Account;

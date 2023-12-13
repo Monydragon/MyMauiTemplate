@@ -1,11 +1,10 @@
 using CommunityToolkit.Maui.Alerts;
 using Mopups.Interfaces;
-using MyMauiTemplate.Core.Extensions;
-using MyMauiTemplate.Core.Models;
-using MyMauiTemplate.Core.RegexExpressions;
-using MyMauiTemplate.Core.Security;
-using MyMauiTemplate.Core.Services.Interfaces;
-using MyMauiTemplate.Core.Utilities;
+using MyMauiTemplate.Extensions;
+using MyMauiTemplate.Models;
+using MyMauiTemplate.Regex;
+using MyMauiTemplate.Security;
+using MyMauiTemplate.Services.Interfaces;
 using MyMauiTemplate.Utilities;
 
 namespace MyMauiTemplate.Pages.Account

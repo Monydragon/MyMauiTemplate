@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Postmark" Version="4.7.10" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\MyMauiTemplate.Configuration\MyMauiTemplate.Configuration.csproj" />
+      <ProjectReference Include="..\MyMauiTemplate.Models\MyMauiTemplate.Models.csproj" />
+    </ItemGroup>
+
+</Project>

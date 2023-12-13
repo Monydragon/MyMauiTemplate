@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MyMauiTemplate.Pages.Account.LoginPage">
-    
+
     <Shell.BackButtonBehavior>
         <BackButtonBehavior IsEnabled="False"
                             IsVisible="False" />
@@ -16,10 +16,9 @@
         </ToolbarItem>
     </ContentPage.ToolbarItems>
 
-
     <ScrollView>
         <!-- Main content in Grid Layout -->
-        <Grid Padding="30,60,30,30"
+        <Grid Padding="20"
               HorizontalOptions="Fill"
               VerticalOptions="Start">
             <Grid.RowDefinitions>
@@ -41,30 +40,36 @@
                    Grid.Row="0"
                    Text="My MAUI Template"
                    FontSize="Large"
-                   HorizontalOptions="Center"/>
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   Margin="0,20,0,10"/>
 
             <!-- Title for the Login Screen -->
             <Label x:Name="loginScreenTitleLabel"
                    Grid.Row="1"
                    Text="Login"
-                   FontSize="Large"
-                   HorizontalOptions="Center"/>
+                   FontSize="Medium"
+                   HorizontalOptions="Center"
+                   Margin="0,10,0,20"/>
 
             <!-- Username Entry -->
             <Label x:Name="usernameLabel"
                    Grid.Row="2"
                    Text="Username/Email"
-                   FontSize="Medium"/>
+                   FontSize="Medium"
+                   Margin="0,5,0,0"/>
             <Entry x:Name="usernameEntry"
                    Grid.Row="3"
                    Placeholder="Username Or Email"
-                   Keyboard="Default"/>
+                   Keyboard="Default"
+                   Margin="0,0,0,10"/>
 
             <!-- Password Entry with Reveal Toggle -->
             <Label x:Name="passwordLabel"
                    Grid.Row="4"
                    Text="Password"
-                   FontSize="Medium"/>
+                   FontSize="Medium"
+                   Margin="0,5,0,0"/>
             <Grid Grid.Row="5">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*" />
@@ -77,7 +82,8 @@
                 <Button x:Name="passwordRevealButton"
                         Text="Show"
                         Clicked="OnPasswordRevealClicked"
-                        Grid.Column="1"/>
+                        Grid.Column="1"
+                        CornerRadius="5"/>
             </Grid>
 
             <!-- Remember Me Switch -->
@@ -92,14 +98,16 @@
                        Grid.Column="0"
                        Text="Remember Me"
                        FontSize="Medium"
-                       VerticalOptions="Center"/>
+                       VerticalOptions="Center"
+                       Margin="0,5,0,0"/>
 
                 <Switch x:Name="rememberMeSwitch" 
                         Grid.Column="1"
                         Toggled="RememberMeSwitch_OnToggled"
                         HorizontalOptions="Start"
                         OnColor="{AppThemeBinding Light=Green, Dark=Green}"
-                        ThumbColor="{AppThemeBinding Light=Blue, Dark=Blue}"/>
+                        ThumbColor="{AppThemeBinding Light=Blue, Dark=Blue}"
+                        Margin="0,5,0,0"/>
             </Grid>
 
             <!-- Auto Login Switch -->
@@ -115,7 +123,8 @@
                        Text="Auto Login"
                        FontSize="Medium"
                        VerticalOptions="Center"
-                       IsVisible="False"/>
+                       IsVisible="False"
+                       Margin="0,5,0,0"/>
 
                 <Switch x:Name="autoLoginSwitch"
                         Grid.Column="1"
@@ -123,7 +132,8 @@
                         HorizontalOptions="Start"
                         OnColor="{AppThemeBinding Light=Green, Dark=Green}"
                         ThumbColor="{AppThemeBinding Light=Blue, Dark=Blue}"
-                        IsVisible="False"/>
+                        IsVisible="False"
+                        Margin="0,5,0,0"/>
             </Grid>
 
             <!-- Continue as Guest Button -->
@@ -131,12 +141,12 @@
                     Grid.Row="8"
                     Text="Continue as Guest"
                     Clicked="OnGuestLoginClicked"
-                    Margin="0,0,0,5"/>
+                    Margin="0,10,0,5"/>
 
 
             <!-- Login and Register Buttons in Grid Layout -->
             <Grid Grid.Row="9"
-                  Margin="0,5"
+                  Margin="0,20,0,0"
                   ColumnSpacing="10">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*" />
@@ -145,12 +155,14 @@
                 <Button x:Name="registerButton"
                         Text="Register"
                         Clicked="OnRegisterClicked"
-                        Grid.Column="0"/>
+                        Grid.Column="0"
+                        CornerRadius="5"/>
                 
                 <Button x:Name="loginButton"
                         Text="Login"
                         Clicked="OnLoginClicked"
-                        Grid.Column="1"/>
+                        Grid.Column="1"
+                        CornerRadius="5"/>
             </Grid>
 
             <!-- Forgot Password Button -->
