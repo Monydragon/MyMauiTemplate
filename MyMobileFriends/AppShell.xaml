@@ -6,7 +6,7 @@
     xmlns:local="clr-namespace:MyMauiTemplate"
     xmlns:account="clr-namespace:MyMauiTemplate.Pages.Account"
     Shell.FlyoutBehavior="Disabled"
-    Title="MyMauiTemplate">
+    Title="MyMobileFriends">
 
     <ShellContent
         ContentTemplate="{DataTemplate account:LoginPage}"
