@@ -4,11 +4,12 @@
         <TargetFramework>net8.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
+        <RootNamespace>MyMauiTemplate.Security</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\MyMauiTemplate.Extensions\MyMauiTemplate.Extensions.csproj" />
-      <ProjectReference Include="..\MyMauiTemplate.Utilities\MyMauiTemplate.Utilities.csproj" />
+      <ProjectReference Include="..\MyMobileFriends.Extensions\MyMobileFriends.Extensions.csproj" />
+      <ProjectReference Include="..\MyMobileFriends.Utilities\MyMobileFriends.Utilities.csproj" />
     </ItemGroup>
 
     <ItemGroup>

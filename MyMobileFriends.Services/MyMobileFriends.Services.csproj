@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <RootNamespace>MyMauiTemplate.Services</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\MyMobileFriends.Data\MyMobileFriends.Data.csproj" />
+      <ProjectReference Include="..\MyMobileFriends.Extensions\MyMobileFriends.Extensions.csproj" />
+      <ProjectReference Include="..\MyMobileFriends.Models\MyMobileFriends.Models.csproj" />
+      <ProjectReference Include="..\MyMobileFriends.Utilities\MyMobileFriends.Utilities.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    </ItemGroup>
+
+</Project>

@@ -5,23 +5,23 @@ VisualStudioVersion = 17.8.34316.72
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyMauiTemplate", ".\MyMauiTemplate\MyMauiTemplate.csproj", "{91DCE325-879E-459F-A4F0-5640599A9C5D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyMauiTemplate.Data", "MyMauiTemplate.Data\MyMauiTemplate.Data.csproj", "{BF710191-6FEC-4019-946E-BEFBB72AB031}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyMobileFriends.Data", "MyMobileFriends.Data\MyMobileFriends.Data.csproj", "{BF710191-6FEC-4019-946E-BEFBB72AB031}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyMauiTemplate.Models", "MyMauiTemplate.Models\MyMauiTemplate.Models.csproj", "{17B03654-F453-4417-B75D-29BCD1C15023}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyMobileFriends.Models", "MyMobileFriends.Models\MyMobileFriends.Models.csproj", "{17B03654-F453-4417-B75D-29BCD1C15023}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyMauiTemplate.Configuration", "MyMauiTemplate.Configuration\MyMauiTemplate.Configuration.csproj", "{61EA00CE-18ED-414A-94EC-80226F945628}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyMobileFriends.Configuration", "MyMobileFriends.Configuration\MyMobileFriends.Configuration.csproj", "{61EA00CE-18ED-414A-94EC-80226F945628}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyMauiTemplate.Extensions", "MyMauiTemplate.Extensions\MyMauiTemplate.Extensions.csproj", "{05D6725E-D28A-421B-9080-4FF268A85AE3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyMobileFriends.Extensions", "MyMobileFriends.Extensions\MyMobileFriends.Extensions.csproj", "{05D6725E-D28A-421B-9080-4FF268A85AE3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyMauiTemplate.API", "MyMauiTemplate.API\MyMauiTemplate.API.csproj", "{7667983E-F102-4221-95CA-D0077E718004}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyMobileFriends.API", "MyMobileFriends.API\MyMobileFriends.API.csproj", "{7667983E-F102-4221-95CA-D0077E718004}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyMauiTemplate.Utilities", "MyMauiTemplate.Utilities\MyMauiTemplate.Utilities.csproj", "{5BC50D4C-D4AB-44CF-AD5C-DDC9E033A463}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyMobileFriends.Utilities", "MyMobileFriends.Utilities\MyMobileFriends.Utilities.csproj", "{5BC50D4C-D4AB-44CF-AD5C-DDC9E033A463}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyMauiTemplate.Security", "MyMauiTemplate.Security\MyMauiTemplate.Security.csproj", "{2AC2413E-08A1-4BE4-9A08-3B419A9BFD3B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyMobileFriends.Security", "MyMobileFriends.Security\MyMobileFriends.Security.csproj", "{2AC2413E-08A1-4BE4-9A08-3B419A9BFD3B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyMauiTemplate.Regex", "MyMauiTemplate.Regex\MyMauiTemplate.Regex.csproj", "{38BD73D5-ECB2-4897-8CF9-3080F05B9383}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyMobileFriends.Regex", "MyMobileFriends.Regex\MyMobileFriends.Regex.csproj", "{38BD73D5-ECB2-4897-8CF9-3080F05B9383}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyMauiTemplate.Services", "MyMauiTemplate.Services\MyMauiTemplate.Services.csproj", "{039059C9-FEA5-48ED-9E83-A622BDE63310}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyMobileFriends.Services", "MyMobileFriends.Services\MyMobileFriends.Services.csproj", "{039059C9-FEA5-48ED-9E83-A622BDE63310}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

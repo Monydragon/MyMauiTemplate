@@ -17,7 +17,7 @@ namespace MyMauiTemplate.Data.Migrations
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "8.0.0");
 
-            modelBuilder.Entity("MyMauiTemplate.Models.User", b =>
+            modelBuilder.Entity("MyMobileFriends.Models.User", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -78,7 +78,7 @@ namespace MyMauiTemplate.Data.Migrations
                     b.ToTable("Users");
                 });
 
-            modelBuilder.Entity("MyMauiTemplate.Models.VerificationCode", b =>
+            modelBuilder.Entity("MyMobileFriends.Models.VerificationCode", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -96,9 +96,9 @@ namespace MyMauiTemplate.Data.Migrations
                     b.ToTable("VerificationCode");
                 });
 
-            modelBuilder.Entity("MyMauiTemplate.Models.User", b =>
+            modelBuilder.Entity("MyMobileFriends.Models.User", b =>
                 {
-                    b.HasOne("MyMauiTemplate.Models.VerificationCode", "VerificationCode")
+                    b.HasOne("MyMobileFriends.Models.VerificationCode", "VerificationCode")
                         .WithMany()
                         .HasForeignKey("VerificationCodeId");
 

@@ -4,6 +4,7 @@
         <TargetFramework>net8.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
+        <RootNamespace>MyMauiTemplate.API</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>
@@ -11,8 +12,8 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\MyMauiTemplate.Configuration\MyMauiTemplate.Configuration.csproj" />
-      <ProjectReference Include="..\MyMauiTemplate.Models\MyMauiTemplate.Models.csproj" />
+      <ProjectReference Include="..\MyMobileFriends.Configuration\MyMobileFriends.Configuration.csproj" />
+      <ProjectReference Include="..\MyMobileFriends.Models\MyMobileFriends.Models.csproj" />
     </ItemGroup>
 
 </Project>

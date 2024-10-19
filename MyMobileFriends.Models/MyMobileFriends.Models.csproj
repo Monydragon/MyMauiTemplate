@@ -4,10 +4,11 @@
         <TargetFramework>net8.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
+        <RootNamespace>MyMauiTemplate.Models</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\MyMauiTemplate.Models\MyMauiTemplate.Models.csproj" />
+      <ProjectReference Include="..\MyMobileFriends.Extensions\MyMobileFriends.Extensions.csproj" />
     </ItemGroup>
 
 </Project>
