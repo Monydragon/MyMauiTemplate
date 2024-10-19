@@ -1,4 +1,4 @@
-﻿namespace MyMauiTemplate.Models;
+﻿namespace MyMobileFriends.Models;
 
 public class User
 {

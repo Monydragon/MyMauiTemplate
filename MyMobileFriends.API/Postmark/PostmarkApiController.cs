@@ -1,10 +1,9 @@
-
-using MyMauiTemplate.Configuration.Constants;
-using MyMauiTemplate.Models;
+using MyMobileFriends.Configuration.Constants;
+using MyMobileFriends.Models;
 using PostmarkDotNet;
 using PostmarkDotNet.Model;
 
-namespace MyMauiTemplate.API.Postmark;
+namespace MyMobileFriends.API.Postmark;
 
 public class PostmarkApiController
 {

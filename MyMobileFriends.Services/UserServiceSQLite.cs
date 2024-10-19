@@ -1,11 +1,11 @@
 using Microsoft.EntityFrameworkCore;
-using MyMauiTemplate.Data.Data_Context;
-using MyMauiTemplate.Extensions;
-using MyMauiTemplate.Models;
-using MyMauiTemplate.Services.Interfaces;
-using MyMauiTemplate.Utilities;
+using MyMobileFriends.Extensions;
+using MyMobileFriends.Data.Data_Context;
+using MyMobileFriends.Models;
+using MyMobileFriends.Services.Interfaces;
+using MyMobileFriends.Utilities;
 
-namespace MyMauiTemplate.Services;
+namespace MyMobileFriends.Services;
 
 public class UserServiceSQLite : IUserService
 {

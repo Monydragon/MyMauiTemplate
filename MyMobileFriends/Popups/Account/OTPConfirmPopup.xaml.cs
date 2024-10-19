@@ -1,13 +1,13 @@
 using CommunityToolkit.Maui.Alerts;
 using CommunityToolkit.Maui.Core;
 using Mopups.Interfaces;
-using MyMauiTemplate.Models;
-using MyMauiTemplate.Pages.Account;
-using MyMauiTemplate.Security;
-using MyMauiTemplate.Services.Interfaces;
-using MyMauiTemplate.Utilities;
+using MyMobileFriends.Models;
+using MyMobileFriends.Pages.Account;
+using MyMobileFriends.Security;
+using MyMobileFriends.Services.Interfaces;
+using MyMobileFriends.Utilities;
 
-namespace MyMauiTemplate.Popups.Account;
+namespace MyMobileFriends.Popups.Account;
 
 public partial class OtpConfirmPopup
 {

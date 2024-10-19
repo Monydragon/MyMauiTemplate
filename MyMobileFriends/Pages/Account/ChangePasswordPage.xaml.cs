@@ -1,10 +1,10 @@
 using Mopups.Interfaces;
-using MyMauiTemplate.Extensions;
-using MyMauiTemplate.Models;
-using MyMauiTemplate.Regex;
-using MyMauiTemplate.Services.Interfaces;
+using MyMobileFriends.Extensions;
+using MyMobileFriends.Models;
+using MyMobileFriends.Regex;
+using MyMobileFriends.Services.Interfaces;
 
-namespace MyMauiTemplate.Pages.Account;
+namespace MyMobileFriends.Pages.Account;
 
 public partial class ChangePasswordPage
 {

@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace MyMauiTemplate.Data.Migrations
+namespace MyMobileFriends.Data.Migrations
 {
     /// <inheritdoc />
     public partial class Initial : Migration

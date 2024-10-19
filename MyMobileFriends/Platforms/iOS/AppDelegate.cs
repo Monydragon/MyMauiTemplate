@@ -1,6 +1,6 @@
 ﻿using Foundation;
 
-namespace MyMauiTemplate.Platforms.iOS
+namespace MyMobileFriends.Platforms.iOS
 {
     [Register("AppDelegate")]
     public class AppDelegate : MauiUIApplicationDelegate

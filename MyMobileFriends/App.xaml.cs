@@ -1,7 +1,7 @@
-﻿using MyMauiTemplate.Configuration.Constants;
-using MyMauiTemplate.Utilities;
+﻿using MyMobileFriends.Configuration.Constants;
+using MyMobileFriends.Utilities;
 
-namespace MyMauiTemplate
+namespace MyMobileFriends
 {
     public partial class App : Application
     {

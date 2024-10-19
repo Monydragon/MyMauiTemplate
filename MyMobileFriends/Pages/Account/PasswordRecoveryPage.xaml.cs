@@ -1,12 +1,12 @@
 using Mopups.Interfaces;
-using MyMauiTemplate.API.Postmark;
-using MyMauiTemplate.Extensions;
-using MyMauiTemplate.Models;
-using MyMauiTemplate.Popups.Account;
-using MyMauiTemplate.Security;
-using MyMauiTemplate.Services.Interfaces;
+using MyMobileFriends.Extensions;
+using MyMobileFriends.API.Postmark;
+using MyMobileFriends.Models;
+using MyMobileFriends.Popups.Account;
+using MyMobileFriends.Security;
+using MyMobileFriends.Services.Interfaces;
 
-namespace MyMauiTemplate.Pages.Account;
+namespace MyMobileFriends.Pages.Account;
 
 public partial class PasswordRecoveryPage
 {

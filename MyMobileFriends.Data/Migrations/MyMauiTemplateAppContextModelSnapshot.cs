@@ -3,11 +3,11 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using MyMauiTemplate.Data.Data_Context;
+using MyMobileFriends.Data.Data_Context;
 
 #nullable disable
 
-namespace MyMauiTemplate.Data.Migrations
+namespace MyMobileFriends.Data.Migrations
 {
     [DbContext(typeof(MyMauiTemplateAppContext))]
     partial class MyMauiTemplateAppContextModelSnapshot : ModelSnapshot

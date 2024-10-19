@@ -1,8 +1,8 @@
 using Mopups.Interfaces;
-using MyMauiTemplate.Services.Interfaces;
-using MyMauiTemplate.Utilities;
+using MyMobileFriends.Services.Interfaces;
+using MyMobileFriends.Utilities;
 
-namespace MyMauiTemplate.Pages;
+namespace MyMobileFriends.Pages;
 
 public partial class SettingsPage
 {

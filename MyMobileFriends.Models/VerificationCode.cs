@@ -1,6 +1,6 @@
-using MyMauiTemplate.Extensions;
+using MyMobileFriends.Extensions;
 
-namespace MyMauiTemplate.Models;
+namespace MyMobileFriends.Models;
 
 public class VerificationCode
 {

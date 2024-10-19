@@ -1,9 +1,9 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Maui.Controls;
-using MyMauiTemplate.Configuration.Constants;
-using MyMauiTemplate.Models;
+using MyMobileFriends.Configuration.Constants;
+using MyMobileFriends.Models;
 
-namespace MyMauiTemplate.Data.Data_Context;
+namespace MyMobileFriends.Data.Data_Context;
 
 public class MyMauiTemplateAppContext(string connectionString = AppConstants.SqlLiteConnectionString) : DbContext
 {

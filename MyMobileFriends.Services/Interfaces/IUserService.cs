@@ -1,6 +1,6 @@
-using MyMauiTemplate.Models;
+using MyMobileFriends.Models;
 
-namespace MyMauiTemplate.Services.Interfaces;
+namespace MyMobileFriends.Services.Interfaces;
 
 public interface IUserService
 {

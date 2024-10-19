@@ -1,11 +1,11 @@
 using Mopups.Interfaces;
-using MyMauiTemplate.Extensions;
-using MyMauiTemplate.Models;
-using MyMauiTemplate.Security;
-using MyMauiTemplate.Services.Interfaces;
-using MyMauiTemplate.Utilities;
+using MyMobileFriends.Extensions;
+using MyMobileFriends.Models;
+using MyMobileFriends.Security;
+using MyMobileFriends.Services.Interfaces;
+using MyMobileFriends.Utilities;
 
-namespace MyMauiTemplate.Pages.Account;
+namespace MyMobileFriends.Pages.Account;
 
 public partial class ProfilePage
 {

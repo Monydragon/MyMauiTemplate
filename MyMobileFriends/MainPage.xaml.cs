@@ -1,4 +1,4 @@
-﻿namespace MyMauiTemplate
+﻿namespace MyMobileFriends
 {
     public partial class MainPage : ContentPage
     {

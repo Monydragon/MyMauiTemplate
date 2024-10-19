@@ -4,15 +4,15 @@ using Microsoft.Extensions.Logging;
 using Mopups.Hosting;
 using Mopups.Interfaces;
 using Mopups.Services;
-using MyMauiTemplate.Configuration.Constants;
-using MyMauiTemplate.Data.Data_Context;
-using MyMauiTemplate.Pages;
-using MyMauiTemplate.Pages.Account;
-using MyMauiTemplate.Popups.Account;
-using MyMauiTemplate.Services;
-using MyMauiTemplate.Services.Interfaces;
+using MyMobileFriends.Configuration.Constants;
+using MyMobileFriends.Data.Data_Context;
+using MyMobileFriends.Pages;
+using MyMobileFriends.Pages.Account;
+using MyMobileFriends.Popups.Account;
+using MyMobileFriends.Services;
+using MyMobileFriends.Services.Interfaces;
 
-namespace MyMauiTemplate
+namespace MyMobileFriends
 {
     public static class MauiProgram
     {

@@ -1,6 +1,6 @@
-using MyMauiTemplate.Models;
+using MyMobileFriends.Models;
 
-namespace MyMauiTemplate.Utilities;
+namespace MyMobileFriends.Utilities;
 
 public static class IoHelper
 {

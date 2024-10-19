@@ -1,10 +1,10 @@
-using MyMauiTemplate.Extensions;
-using MyMauiTemplate.Models;
-using MyMauiTemplate.Services.Interfaces;
-using MyMauiTemplate.Utilities;
+using MyMobileFriends.Extensions;
+using MyMobileFriends.Models;
+using MyMobileFriends.Services.Interfaces;
+using MyMobileFriends.Utilities;
 using Newtonsoft.Json;
 
-namespace MyMauiTemplate.Services;
+namespace MyMobileFriends.Services;
 
 public class UserServiceJson : IUserService
 {

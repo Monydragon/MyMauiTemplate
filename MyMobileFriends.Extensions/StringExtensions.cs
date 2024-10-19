@@ -1,8 +1,8 @@
 using System.Security.Cryptography;
 using System.Text;
-using MyMauiTemplate.Configuration.Constants;
+using MyMobileFriends.Configuration.Constants;
 
-namespace MyMauiTemplate.Extensions;
+namespace MyMobileFriends.Extensions;
 
 public static class StringExtensions
 {

@@ -1,8 +1,8 @@
-using MyMauiTemplate.Utilities;
+using MyMobileFriends.Utilities;
 using SkiaSharp;
 using SkiaSharp.QrCode.Image;
 
-namespace MyMauiTemplate.Security;
+namespace MyMobileFriends.Security;
 
 public static class TwoFaBarcodeGenerator
 {

@@ -1,4 +1,4 @@
-namespace MyMauiTemplate.Regex;
+namespace MyMobileFriends.Regex;
 
 public static class RegexExpressions
 {

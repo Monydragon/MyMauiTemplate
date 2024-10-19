@@ -1,12 +1,12 @@
 using Mopups.Interfaces;
-using MyMauiTemplate.API.Postmark;
-using MyMauiTemplate.Extensions;
-using MyMauiTemplate.Models;
-using MyMauiTemplate.Pages.Account;
-using MyMauiTemplate.Security;
-using MyMauiTemplate.Services.Interfaces;
+using MyMobileFriends.Extensions;
+using MyMobileFriends.API.Postmark;
+using MyMobileFriends.Models;
+using MyMobileFriends.Pages.Account;
+using MyMobileFriends.Security;
+using MyMobileFriends.Services.Interfaces;
 
-namespace MyMauiTemplate.Popups.Account;
+namespace MyMobileFriends.Popups.Account;
 
 public partial class PasswordResetVerificationPopup
 {

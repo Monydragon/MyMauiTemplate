@@ -1,11 +1,11 @@
 ﻿using CommunityToolkit.Maui.Alerts;
 using Mopups.Interfaces;
-using MyMauiTemplate.Models;
-using MyMauiTemplate.Popups.Account;
-using MyMauiTemplate.Services.Interfaces;
-using MyMauiTemplate.Utilities;
+using MyMobileFriends.Models;
+using MyMobileFriends.Popups.Account;
+using MyMobileFriends.Services.Interfaces;
+using MyMobileFriends.Utilities;
 
-namespace MyMauiTemplate.Pages.Account;
+namespace MyMobileFriends.Pages.Account;
 
 public partial class LoginPage
 {

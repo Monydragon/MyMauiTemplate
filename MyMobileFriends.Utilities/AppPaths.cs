@@ -1,4 +1,4 @@
-namespace MyMauiTemplate.Utilities;
+namespace MyMobileFriends.Utilities;
 
 public static class AppPaths
 {

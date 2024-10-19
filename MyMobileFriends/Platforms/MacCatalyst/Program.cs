@@ -1,6 +1,6 @@
 ﻿using UIKit;
 
-namespace MyMauiTemplate.Platforms.MacCatalyst
+namespace MyMobileFriends.Platforms.MacCatalyst
 {
     public class Program
     {

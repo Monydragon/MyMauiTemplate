@@ -1,6 +1,6 @@
 ﻿using UIKit;
 
-namespace MyMauiTemplate.Platforms.iOS
+namespace MyMobileFriends.Platforms.iOS
 {
     public class Program
     {

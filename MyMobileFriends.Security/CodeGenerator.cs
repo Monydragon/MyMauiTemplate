@@ -1,7 +1,7 @@
-using MyMauiTemplate.Extensions;
-using MyMauiTemplate.Models;
+using MyMobileFriends.Extensions;
+using MyMobileFriends.Models;
 
-namespace MyMauiTemplate.Security;
+namespace MyMobileFriends.Security;
 
 public static class CodeGenerator
 {
